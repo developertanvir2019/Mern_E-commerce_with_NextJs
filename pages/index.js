@@ -17,6 +17,7 @@ export default function Home() {
       <main>
         <UnderBanner></UnderBanner>
         <h3>hi oneij</h3>
+        <h4>Hello Ecommec website with Next js</h4>
       </main>
     </>
   )
