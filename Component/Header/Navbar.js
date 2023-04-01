@@ -1,3 +1,5 @@
+import { CgProfile } from 'react-icons/cg';
+import { BsCart3 } from 'react-icons/bs';
 const Navbar = () => {
     return (
         <div className="navbar bg-primary">
@@ -21,26 +23,31 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-3xl lg:ml-12 text-white">Sharaf DG</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabIndex={0}>
-                        <a>
-                            Parent
-                            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                        </a>
-                        <ul className="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <div className="pr-0 flex items-center justify-center input input-bordered h-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <input className="lg:pr-48 py-1" type="text" placeholder="Search Sharaf DG" />
+                        <img src="/images/searchbarsite.png" alt="" />
+                    </div>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Get started</a>
+            <div className="navbar-end mr-6">
+                <div className='flex justify-between items-center'>
+                    <select className=" bg-primary text-white font-semibold">
+                        <option selected>English</option>
+                        <option>Bangla</option>
+                    </select>
+                    <div className='flex justify-center items-center text-white mx-8'>
+                        <CgProfile className='text-3xl'></CgProfile>
+                        <p>SIGN IN</p>
+                    </div>
+                    <div className='text-white'>
+                        <BsCart3 className='text-2xl'></BsCart3>
+                    </div>
+                </div>
             </div>
         </div>
     );

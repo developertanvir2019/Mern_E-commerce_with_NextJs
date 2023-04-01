@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import UnderBanner from '@/Component/UnderBanner/UnderBanner'
+import SmallCaroel from '@/Component/UnderBanner/SmallCaroel'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <main>
         <UnderBanner></UnderBanner>
+        <SmallCaroel></SmallCaroel>
         <h3>hi tanvir , git ADDED</h3>
       </main>
     </>
